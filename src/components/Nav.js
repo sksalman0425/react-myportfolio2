@@ -14,25 +14,46 @@ const Nav = () => {
           {state ? (
             <ul className="navbar__right">
               <li>
-                <a href="">Home</a>
+                {/* <button>Home</button> */}
+                <a href="/" > 
+                Home
+                </a>
               </li>
               <li>
-                <a href="">Services</a>
+                {/* <button>Services</button> */}
+                <a href="/" > 
+                Services
+                </a>
               </li>
               <li>
-                <a href="">About</a>
+                {/* <button>About</button> */}
+                <a href="/" > 
+                About
+                </a>
               </li>
               <li>
-                <a href="">Skills</a>
+                {/* <button>Skills</button> */}
+                <a href="/" > 
+                Skills
+                </a>
               </li>
               <li>
-                <a href="">Portfolio</a>
+                {/* <button>Portfolio</button> */}
+                <a href="/" > 
+                Portfolio
+                </a>
               </li>
               <li>
-                <a href="">Blog</a>
+                {/* <button>Blog</button> */}
+                <a href="/" > 
+                Blog
+                </a>
               </li>
               <li>
-                <a href="">Contact</a>
+                {/* <button>Contact</button> */}
+                <a href="/" > 
+                Contact
+                </a>
               </li>
             </ul>
           ) : (

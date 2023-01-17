@@ -4,13 +4,13 @@ const About = () => {
   const [header] = React.useState({
     subHeader: "About Me",
     text:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum standard dummy text.",
+      "Hi, I have completed M.E (Master of Engineering) from MIT college of Engineering, Kothrude, Pune. After That i have completed PG-DAC (Post-Graduate Diploma in Advance Computing) from CDAC Pune. My interests are in Web Development and I love to create beautiful and performant products with delightful user experiences...",
   });
   const [state] = React.useState([
-    { id: 1, title: "Name:", text: "Jonathan Doe" },
-    { id: 2, title: "Email:", text: "example@domain.com" },
-    { id: 3, title: "Phone:", text: "+1 023 454 345" },
-    { id: 4, title: "Linkedin", text: "Jonathan_123" },
+    { id: 1, title: "Name:", text: "Shaikh Salman" },
+    { id: 2, title: "Email:", text: "sk.salman61@gmail.com" },
+    { id: 3, title: "Phone:", text: "+91 8055641054" },
+    { id: 4, title: "Linkedin", text: "https://www.linkedin.com/in/sksalman61" },
   ]);
   return (
     <div className="about">
@@ -30,13 +30,10 @@ const About = () => {
             <div className="about__info">
               <h1>Hi There</h1>
               <div className="about__info-p1">
-                In id nulla magna. Nullam posuere fermentum mattis. Nunc id dui
-                at sapien faucibus fermentum ut vel diam. Nullam tempus, nunc id
-                efficitur sagittis, urna est ultricies eros, ac porta sem turpis
+              As a web developer we Write well designed, testable, efficient code by using best software development practices. 
               </div>
               <div className="about__info-p2">
-                nunc id efficitur sagittis, urna est ultricies eros, ac porta
-                sem turpis porta sem turpis quis leo. Nulla in feugiat elit
+              we Create website's and their layout/user interfaces by using standard HTML, CSS, Bootsrap, Javascript, React JS, React Hooks, Redux.
               </div>
               <div className="info__contacts">
                 <div className="row">

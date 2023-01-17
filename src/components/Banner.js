@@ -8,9 +8,9 @@ import {
 } from "react-icons/fa";
 const Banner = () => {
   const [state] = React.useState({
-    title: "I am Jonathan Doe",
+    title: "I am Shaikh Salman ",
     text:
-      "i,m Jonathan, professional web developer with long time experience in this field​",
+      "I am Shaikh Salman, professional Software developer with long time experience in this field​",
     image: "/images/man-01.png",
   });
   return (
@@ -37,11 +37,13 @@ const Banner = () => {
                 <h1>{state.title}</h1>
                 <p>{state.text}</p>
                 <div className="header__buttons">
-                  <a href="" className="btn btn-outline">
+                  {/* <button className="btn btn-outline"> My Portfolio</button> */}
+                  <a href="/" className="btn btn-outline">
                     My Portfolio
                   </a>
                   &nbsp;&nbsp;&nbsp;
-                  <a href="" className="btn btn-smart">
+                  {/* <button className="btn btn-smart"> <FaPlay className="play" /> </button> */}
+                  <a href="/" className="btn btn-smart"> 
                     <FaPlay className="play" />
                   </a>
                 </div>

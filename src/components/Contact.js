@@ -1,4 +1,5 @@
 import React from "react";
+//import { ReactDOM } from "react";
 import {
   FaFacebookF,
   FaTwitter,
@@ -16,12 +17,22 @@ const Contact = () => {
               <div className="contactSection-logo">
                 <img src="/images/logo.png" alt="" />
               </div>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                eiusmod tempor inci- didunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exe- rcitation ullamco
-                laboris nisi ut aliquip ex ea commodo consequat.
+              <p className="contactCircles">
+                This website developed and maintain solely by Shaikh Salman.
               </p>
+              {/* <div className="contactCircles">
+                <Form action="mail.php" method="post" id="demo5">
+                    <h2>Connect with us</h2>
+                    <input type="text" name="name" required placeholder="Name">
+                    <input type="email" name= "email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="please enter valid email [test@test.com]." required placeholder="E-mail">
+                    <br/>
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required placeholder="Phone Number">
+                    <br/>
+                    <textarea cols="40" rows="10" name="comment" placeholder=" write Message"></textarea>
+                    <br/>
+                    <button  class="c-btn">Submit</button>
+                </Form>
+            </div> */}
               <ul className="contactCircles">
                 <li>
                   <FaFacebookF className="contactIcon" />

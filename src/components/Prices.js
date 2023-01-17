@@ -3,37 +3,37 @@ import React from "react";
 const Prices = () => {
   const [header] = React.useState({
     mainHeader: "CHOOSE A PLAN",
-    subHeading: "Pricing Plan",
+    subHeading: "Personalised IT Service & consulting for You",
     text:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum standard dummy text.",
+      "We keep you informed from time to time whenever you are eligible for different discounts and offers. Visite our Website frequently to check and avail the best available offer.",
   });
   const [state] = React.useState([
     {
       id: 1,
       heading: "Basic",
-      price: 50,
+      price: 3000,
       msg1: "5GB Storage Space",
-      msg2: "20GB Monthly Bandwidth",
+      msg2: "10GB Monthly Bandwidth",
       msg3: "My SQL Databases",
-      msg4: "100 Email Account",
-      msg5: "10 Free Domain Names",
+      msg4: "30 Email Account",
+      msg5: "3 Free Domain Names",
     },
     {
       id: 2,
       heading: "Standard",
-      price: 80,
-      msg1: "5GB Storage Space",
+      price: 4500,
+      msg1: "10GB Storage Space",
       msg2: "20GB Monthly Bandwidth",
       msg3: "My SQL Databases",
-      msg4: "100 Email Account",
-      msg5: "10 Free Domain Names",
+      msg4: "50 Email Account",
+      msg5: "5 Free Domain Names",
     },
     {
       id: 3,
       heading: "Premium",
-      price: 160,
-      msg1: "5GB Storage Space",
-      msg2: "20GB Monthly Bandwidth",
+      price: 6000,
+      msg1: "15GB Storage Space",
+      msg2: "30GB Monthly Bandwidth",
       msg3: "My SQL Databases",
       msg4: "100 Email Account",
       msg5: "10 Free Domain Names",
@@ -52,10 +52,11 @@ const Prices = () => {
           {state.map((prices) => (
             <div className="col-4" key={prices.id}>
               <div className="price">
-                <div className="priceHeading">${prices.heading}</div>
+                <div className="priceHeading">{prices.heading}</div>
                 <div className="price__rs">
-                  <span>$</span>
+                    ₹
                   {prices.price}
+                  
                 </div>
                 <ul>
                   <li>{prices.msg1}</li>
@@ -65,9 +66,9 @@ const Prices = () => {
                   <li>{prices.msg5}</li>
                 </ul>
                 <div className="price__btn">
-                  <a href="" className="btn btn-outline">
+                  <button className="btn btn-outline">
                     Purchase
-                  </a>
+                  </button>
                 </div>
               </div>
             </div>
@@ -77,5 +78,5 @@ const Prices = () => {
     </div>
   );
 };
-
+//for rupees symboll press ctrl+alt+4
 export default Prices;
