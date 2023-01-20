@@ -1,9 +1,11 @@
 import React from "react";
+
 import { FaAlignJustify } from "react-icons/fa";
+//import { Link } from "react-router-dom";
 const Nav = () => {
   const [state, setState] = React.useState(true);
   return (
-    <nav className="navbar">
+    <nav id='navbar' className="navbar">
       <div className="container">
         <div className="navbar__container">
           <ul className="navbar__left">
@@ -15,43 +17,25 @@ const Nav = () => {
             <ul className="navbar__right">
               <li>
                 {/* <button>Home</button> */}
-                <a href="/" > 
+                <a href="#banner" > 
                 Home
                 </a>
               </li>
               <li>
                 {/* <button>Services</button> */}
-                <a href="/" > 
+                <a href="#services" > 
                 Services
                 </a>
               </li>
               <li>
                 {/* <button>About</button> */}
-                <a href="/" > 
+                <a href="#about" > 
                 About
                 </a>
               </li>
               <li>
-                {/* <button>Skills</button> */}
-                <a href="/" > 
-                Skills
-                </a>
-              </li>
-              <li>
-                {/* <button>Portfolio</button> */}
-                <a href="/" > 
-                Portfolio
-                </a>
-              </li>
-              <li>
-                {/* <button>Blog</button> */}
-                <a href="/" > 
-                Blog
-                </a>
-              </li>
-              <li>
                 {/* <button>Contact</button> */}
-                <a href="/" > 
+                <a href="#contact" > 
                 Contact
                 </a>
               </li>

@@ -1,19 +1,16 @@
 import React from "react";
 import {
   FaGithub,
-  FaCamera,
+ // FaCamera,
   FaCircleNotch,
   FaApple,
-  FaFileVideo,
-  FaSearchDollar,
+  //FaFileVideo,
+  //FaSearchDollar,
 } from "react-icons/fa";
 const Services = () => {
   const [header] = React.useState({
     mainHeader: "SERVICES",
-    subHeading: "My Services",
-    text:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum standard dummy text.",
-    
+    subHeading: "My Services",  
   });
   const [state] = React.useState([
     {
@@ -24,14 +21,14 @@ const Services = () => {
         "A Web Development service provides you design and development of websites. We ensure that websites meet client expectations by ensuring they look good, run smoothly.",
       
     },
-    {
-      id: 2,
-      icon: <FaCamera className="commonIcons" />,
-      heading: "Photography",
-      text:
-        "Professional photography services work with clients to provide photographs for a variety of purposes including advertising, training, documentation, and employee communication.",
+    // {
+    //   id: 2,
+    //   icon: <FaCamera className="commonIcons" />,
+    //   heading: "Photography",
+    //   text:
+    //     "Professional photography services work with clients to provide photographs for a variety of purposes including advertising, training, documentation, and employee communication.",
      
-    },
+    // },
     {
       id: 3,
       icon: <FaCircleNotch className="commonIcons" />,
@@ -48,25 +45,25 @@ const Services = () => {
         "In Mobile app development services we aimed at building iOS and Android applications that effectively complement or substitute websites",
         
     },
-    {
-      id: 5,
-      icon: <FaFileVideo className="commonIcons" />,
-      heading: "Video Editing",
-      text:
-        "Professional video services work with clients to provide videos for a variety of purposes including advertising, training, documentation, and employee communication.",
+    // {
+    //   id: 5,
+    //   icon: <FaFileVideo className="commonIcons" />,
+    //   heading: "Video Editing",
+    //   text:
+    //     "Professional video services work with clients to provide videos for a variety of purposes including advertising, training, documentation, and employee communication.",
       
-    },
-    {
-      id: 6,
-      icon: <FaSearchDollar className="commonIcons" />,
-      heading: "SEO Expert",
-      text:
-        " Our SEO(Search Engine Optimization) Expert work with clients to optimize client website's technical configuration, content relevance and link popularity so its pages can become easily findable, more relevant, popular towards user search experience and page’s ranking on google search.",
+    // },
+    // {
+    //   id: 6,
+    //   icon: <FaSearchDollar className="commonIcons" />,
+    //   heading: "SEO Expert",
+    //   text:
+    //     " Our SEO(Search Engine Optimization) Expert work with clients to optimize client website's technical configuration, content relevance and link popularity so its pages can become easily findable, more relevant, popular towards user search experience and page’s ranking on google search.",
         
-    },
+    // },
   ]);
   return (
-    <div className="services">
+    <div id='services' className="services">
       <div className="container">
         <div className="services__header">
           <div className="common">
@@ -84,6 +81,7 @@ const Services = () => {
                   <div className="services__box-header">{info.heading}</div>
                   <div className="services__box-p">{info.text}</div>
                 </div>
+                
               </div>
             ))}
           </div>

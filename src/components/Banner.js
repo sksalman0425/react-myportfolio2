@@ -4,17 +4,26 @@ import {
   FaTwitter,
   FaPinterest,
   FaInstagram,
-  FaPlay,
+  //FaPlay,
 } from "react-icons/fa";
+//import { Link } from "react-router-dom";
+import RESUME from './RESUME.pdf';//for files other than .js, you have to provide it's extension 
+import About from "./About";
+import Contact from "./Contact";
+import Nav from "./Nav";
+import Services from "./Services";
 const Banner = () => {
   const [state] = React.useState({
-    title: "I am Shaikh Salman ",
+    title: "Hello Everyone, ",
+            
     text:
-      "I am Shaikh Salman, professional Software developer with long time experience in this field​",
+      "I am Shaikh Salman, A Professional Software developer with long time experience in FrontEnd web Development.",
     image: "/images/man-01.png",
   });
   return (
-    <header className="header">
+    <>
+    <Nav/>
+    <header id='banner' className="header">
       <div className="container">
         <div className="row">
           <div className="col-6">
@@ -38,14 +47,14 @@ const Banner = () => {
                 <p>{state.text}</p>
                 <div className="header__buttons">
                   {/* <button className="btn btn-outline"> My Portfolio</button> */}
-                  <a href="/" className="btn btn-outline">
-                    My Portfolio
+                  <a href={RESUME} target="_blank" className="btn btn-outline">
+                    Download CV
                   </a>
                   &nbsp;&nbsp;&nbsp;
                   {/* <button className="btn btn-smart"> <FaPlay className="play" /> </button> */}
-                  <a href="/" className="btn btn-smart"> 
+                  {/* <a href="/" className="btn btn-smart"> 
                     <FaPlay className="play" />
-                  </a>
+                  </a> */}
                 </div>
               </div>
             </div>
@@ -58,6 +67,10 @@ const Banner = () => {
         </div>
       </div>
     </header>
+    <About/>
+    <Services/>
+    <Contact/>
+    </>
   );
 };
 

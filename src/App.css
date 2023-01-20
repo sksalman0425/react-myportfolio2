@@ -7,7 +7,7 @@
 body {
   font-family: "Poppins", sans-serif;
 }
-/* here   background: url("image path"); */
+/* here   background: url("image path"); herebz in .css we have to exlpicitly define image path */
 .header {
   width: 100%;
   height: 100vh;
@@ -18,12 +18,13 @@ body {
 }
 .navbar {
   width: 100%;
-  height: 100px;
+  height: 75px;
   position: fixed;
   top: 0;
   background: #1f2235;
   z-index: 1;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  
 }
 
 .navbar__container {
@@ -292,9 +293,11 @@ body {
 .price__btn {
   margin-top: 40px;
 }
+
 .contact {
-  padding: 100px 0;
-  background: #23263a;
+ 
+  padding-top: 75px;
+  background: #1f2235;
 }
 .contactSection-logo {
   text-align: center;
@@ -306,7 +309,7 @@ body {
 }
 .contactSection p {
   color: #fff;
-  font-size: 14px;
+  
   margin-bottom: 20px;
 }
 
@@ -346,6 +349,129 @@ body {
   justify-content: center;
   display: none;
 }
+/* new code of css  for form -----------------------------------------*/
+#contact{
+  padding: 100px 50px;
+  background: #23263a;
+}
+.contact-row{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.contact-left-col{
+  flex-basis: 50%;
+}
+.contact-right-col{
+  flex-basis: 50%;
+}
+.contact-right-col form{
+  text-align: center;
+}
+.contact-right-col form h2{
+  margin-bottom: 20px;
+}
+.contact-right-col form input{
+  width: 60%;
+  padding: 10px;
+  margin-bottom: 10px;  
+}
+.contact-right-col form textarea{
+  width: 60%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.form-btn
+{
+  padding: 10px 20px;
+  border:2px solid #ff4a57;
+  border-radius: 50px;
+  background: none;
+  color: #fff;
+}
+/* ----------------------------------------------------------------------------- */
+/*new code for css skills*/
+#skills{
+  padding: 100px 50px;
+  background: #23263a; 
+  background-size: cover;
+  color: white;
+  background-attachment: fixed;
+}
+.skills-row{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap ;
+  background: #23263a;
+  padding: 50px;
+}
+.skills-left-col{
+  flex-basis: 50%;
+  text-align: justify;
+}
+.skill-left-col p{
+  font-size: 20px;
+}
+.skills-right-col{
+  flex-basis: 50%;
+}
+progress{
+  width: 80%;
+}
+.progress-div{
+  width: 70%;
+  margin: auto;
+}
+.progress-div p{
+  margin-bottom: 10px;
+  font-size: 20px;
+  padding-left: 80px;
+  text-align: justify;
+}
+
+.image
+{
+  width:50%;
+  border-radius: 5px;
+}
+.text-center
+{
+  text-align: center;
+}
+.contact-p
+{
+  color: #fff;
+  font-size: 32px;
+  margin-bottom: 32px;
+}
+
+.contact-h2
+{
+  text-align: center;
+  margin-bottom: 20px;
+  color: #fff;
+}
+.margin-top
+{
+  margin-top: 10px;
+  
+}
+.lineheight
+{
+  line-height: 3.3;
+}
+.margin-bottom
+{
+  padding-bottom: 20px;
+}
+.color-fff
+{
+  color: #fff;
+}
+
+/* ---------------------------------------------- */
 @media (max-width: 765px) {
   .container {
     width: 100%;
@@ -376,7 +502,7 @@ body {
   }
   .toggle {
     display: flex;
-  }
+  } 
   .banner__img img {
     display: none;
   }
@@ -396,5 +522,12 @@ body {
   }
   .h-650 {
     height: auto;
+  }
+  .color-fff {
+    color: #fff;
+    text-align: center;
+  }
+  .lineheight {
+    line-height: 1.3;
   }
 }
